@@ -16,5 +16,9 @@ namespace calculadora2
         {
             InitializeComponent();
         }
+        private void btnSumar_Click(object sender, EventArgs e)
+        {
+          // lblResultado.Text = (Convert.ToInt32(txtCantidad1.Text) +  Convert.ToInt32(txtCantidad2.Text)).ToString();
+        }
     }
 }
