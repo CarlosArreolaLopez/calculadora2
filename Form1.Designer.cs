@@ -35,6 +35,8 @@
             this.txtCantidad2 = new System.Windows.Forms.TextBox();
             this.btnSumar = new System.Windows.Forms.Button();
             this.btnResta = new System.Windows.Forms.Button();
+            this.btnDividir = new System.Windows.Forms.Button();
+            this.btnMutiplicar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -99,12 +101,35 @@
             this.btnResta.TabIndex = 6;
             this.btnResta.Text = "Restar";
             this.btnResta.UseVisualStyleBackColor = true;
+            this.btnResta.Click += new System.EventHandler(this.btnResta_Click);
+            // 
+            // btnDividir
+            // 
+            this.btnDividir.Location = new System.Drawing.Point(332, 91);
+            this.btnDividir.Name = "btnDividir";
+            this.btnDividir.Size = new System.Drawing.Size(75, 23);
+            this.btnDividir.TabIndex = 7;
+            this.btnDividir.Text = "Dividir";
+            this.btnDividir.UseVisualStyleBackColor = true;
+            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
+            // 
+            // btnMutiplicar
+            // 
+            this.btnMutiplicar.Location = new System.Drawing.Point(332, 120);
+            this.btnMutiplicar.Name = "btnMutiplicar";
+            this.btnMutiplicar.Size = new System.Drawing.Size(75, 23);
+            this.btnMutiplicar.TabIndex = 8;
+            this.btnMutiplicar.Text = "Multiplicar";
+            this.btnMutiplicar.UseVisualStyleBackColor = true;
+            this.btnMutiplicar.Click += new System.EventHandler(this.btnMutiplicar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(446, 167);
+            this.ClientSize = new System.Drawing.Size(425, 399);
+            this.Controls.Add(this.btnMutiplicar);
+            this.Controls.Add(this.btnDividir);
             this.Controls.Add(this.btnResta);
             this.Controls.Add(this.btnSumar);
             this.Controls.Add(this.txtCantidad2);
@@ -128,6 +153,8 @@
         private System.Windows.Forms.TextBox txtCantidad2;
         private System.Windows.Forms.Button btnSumar;
         private System.Windows.Forms.Button btnResta;
+        private System.Windows.Forms.Button btnDividir;
+        private System.Windows.Forms.Button btnMutiplicar;
     }
 }
 
